@@ -8,12 +8,17 @@ public class Test : MonoBehaviour
     void Start()
     {
         //Destroy(gameObject); // Distroying object
-        Destroy(gameObject, 2f); // Distroying object after certain time
+        //Destroy(gameObject, 2f); // Distroying object after certain time
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject); // Destroy when clicked on it
     }
 }
